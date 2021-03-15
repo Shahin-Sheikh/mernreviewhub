@@ -1,0 +1,273 @@
+body {
+  background: #2b2d33;
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#header {
+  width: 100%;
+  height: 150px;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.1);
+}
+
+.logo {
+  //background-image: url(http://mhdnyc.splashthat.com/img/events/52537/assets/6274.spotify-logo-horizontal-white-rgb.png);
+  background-size: 200px;
+  color: rgb(250, 250, 250);
+  background-repeat: no-repeat;
+  margin-left: -100px;
+  margin-top: 80px;
+  left: 50%;
+  position: absolute;
+  width: 200px;
+  height: 60px;
+}
+#ltc h2 {
+  color: rgb(250, 250, 250);
+  font-weight: bold;
+  top: 200px !important;
+  left: 750px !important;
+}
+
+.linel {
+  width: 135px;
+  height: 1px;
+  background-color: rgba(240, 240, 240, 0.2);
+  margin-top: -20px;
+  float: left;
+
+  &::after {
+    content: 'OR';
+    font-size: 13px;
+    color: rgba(240, 240, 240, 0.58);
+    position: absolute;
+    margin-left: 141px;
+    margin-top: -6px;
+  }
+}
+
+.liner {
+  width: 135px;
+  height: 1px;
+  background-color: rgba(240, 240, 240, 0.2);
+  margin-top: -20px;
+  float: right;
+}
+#main {
+  width: 300px;
+  height: 300px;
+  margin: 40px auto;
+
+  #form {
+    margin-top: 40px;
+
+    ::-webkit-input-placeholder {
+      /* WebKit browsers */
+      color: #9d9d9d;
+    }
+    :-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 */
+      color: #9d9d9d;
+      opacity: 1;
+    }
+    ::-moz-placeholder {
+      /* Mozilla Firefox 19+ */
+      color: #9d9d9d;
+      opacity: 1;
+    }
+    :-ms-input-placeholder {
+      /* Internet Explorer 10+ */
+      color: #9d9d9d;
+    }
+
+    input[name='input'] {
+      width: 320px;
+      height: 40px;
+      background-color: #000000;
+      border-radius: 3px;
+      padding-left: 10px;
+      color: rgb(223, 224, 230);
+      font-size: 12px;
+      outline: none;
+      border: none;
+      margin-top: 15px;
+      &:focus {
+        background-color: #000000;
+      }
+    }
+    a {
+      color: rgb(223, 224, 230);
+      position: relative;
+    }
+
+    h5 {
+      color: rgb(223, 224, 230);
+      font-size: 14px;
+      margin-top: 10px;
+      float: left;
+    }
+
+    input[name='remember'] {
+      float: right;
+      margin-top: 10px;
+    }
+
+    input[name='login'] {
+      clear: both;
+      display: block;
+      margin: 50px auto;
+      width: 318px;
+      height: 40px;
+      outline: none;
+      border: none;
+      background-color: #ffffff;
+      border-radius: 30px;
+      color: #2b2d33;
+      font-weight: 500;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+    input[name='lif'] {
+      clear: both;
+      display: block;
+      margin: 00px auto;
+      width: 318px;
+      height: 40px;
+      outline: none;
+      border: none;
+      background-color: #000000;
+      border-radius: 30px;
+      color: rgb(223, 224, 230);
+      font-weight: 500;
+      font-size: 18px;
+      position: absolute;
+      //text-transform: uppercase;
+    }
+    input[name='lig'] {
+      clear: both;
+      display: block;
+      margin: 100px auto;
+      width: 318px;
+      height: 40px;
+      outline: none;
+      border: none;
+      background-color: #000000;
+      border-radius: 30px;
+      color: rgb(223, 224, 230);
+      font-weight: 500;
+      font-size: 18px;
+      position: 10px;
+      //text-transform: uppercase;
+    }
+    input[name='lia'] {
+      clear: both;
+      display: block;
+      margin: -88px auto;
+      width: 318px;
+      height: 40px;
+      outline: none;
+      border: none;
+      background-color: #000000;
+      border-radius: 30px;
+      color: rgb(223, 224, 230);
+      font-weight: 500;
+      font-size: 18px;
+      position: 10px;
+      //text-transform: uppercase;
+    }
+    .ending {
+      color: #9d9d99;
+      position: absolute;
+      right: 825px;
+      width: 250px;
+      height: 100px;
+      margin: 110px auto;
+    }
+    p {
+      font-family: Arial;
+    }
+
+    .btn-toggle {
+      position: absolute;
+      margin-left: -9999px;
+      visibility: hidden;
+    }
+    .btn-toggle + label {
+      display: block;
+      position: relative;
+      float: right;
+      margin-top: 10px;
+      cursor: pointer;
+      outline: none;
+      user-select: none;
+    }
+
+    input.btn-toggle-round + label {
+      width: 30px;
+      padding: 4px;
+      height: 15px;
+      background-color: transparent;
+      border-radius: 10px;
+      cursor: default;
+    }
+    input.btn-toggle-round + label:before,
+    input.btn-toggle-round + label:after {
+      display: block;
+      position: absolute;
+      top: 1px;
+      left: 1px;
+      bottom: 1px;
+      content: '';
+    }
+    input.btn-toggle-round + label:before {
+      right: 1px;
+      background-color: rgba(0, 0, 0, 0.8);
+      border: 2px solid rgba(200, 200, 200, 0.3);
+      border-radius: 10px;
+      transition: background 0.4s;
+    }
+    input.btn-toggle-round + label:after {
+      width: 20px;
+      background-color: rgb(136, 137, 140);
+      border-radius: 100%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      transition: margin 0.4s cubic-bezier(0.5, 0.28, 0.7, 0.8);
+    }
+
+    input.btn-toggle-round:active + label:after {
+      -webkit-animation: deformation 0.4s ease-in-out;
+    }
+
+    input.btn-toggle-round:hover + label:after {
+      background-color: rgb(250, 250, 250);
+    }
+    input.btn-toggle-round:checked + label:after {
+      background-color: rgb(250, 250, 250);
+    }
+    input.btn-toggle-round:checked + label:before {
+      background-color: #19a34a;
+      border: 2px solid #19a34a;
+    }
+    input.btn-toggle-round:checked + label:after {
+      margin-left: 20px;
+    }
+  } //form
+} //#main
+
+@-webkit-keyframes deformation {
+  0% {
+    width: 20px;
+  }
+  20% {
+    width: 25px;
+  }
+  40% {
+    width: 30px;
+  }
+  80% {
+    width: 25px;
+  }
+  100% {
+    width: 20px;
+  }
+}
