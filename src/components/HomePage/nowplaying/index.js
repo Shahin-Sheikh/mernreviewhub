@@ -16,7 +16,7 @@ export default function NowPlaying({ movie }) {
   return (
     <Container>
       <div className="title" id="title">
-        <h2>Featured today</h2>
+        <h3>Featured today</h3>
       </div>
       <Slider {...settings}>
         {movie.map(function (movie) {

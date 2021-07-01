@@ -49,7 +49,7 @@ export default class Signup extends Component {
 
     const registered = {
       firstName: this.state.firstName,
-      lasttName: this.state.lasttName,
+      lastName: this.state.lastName,
       Email: this.state.Email,
       Password: this.state.Password,
       confirmPassword: this.state.confirmPassword,
